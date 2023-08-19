@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios</title>
+  <script src="script.js"></script>
+</head>
+<body>
+<!-- IMC -->
+<div id="imc">
+    <h2>IMC (Índice de Masa Corporal)</h2>
+    <input type="text" id="peso" placeholder="Peso en kg">
+    <input type="text" id="altura" placeholder="Altura en metros">
+    <button onclick="document.getElementById('resultado-imc').innerText = bmi(document.getElementById('peso').value, document.getElementById('altura').value)">Calcular</button>
+    <p id="resultado-imc"></p>
+  </div>
+  
+  <!-- Número de Likes -->
+  <div id="likes">
+    <h2>Número de Likes</h2>
+    <input type="text" id="numero" placeholder="Número de Likes">
+    <button onclick="document.getElementById('resultado-likes').innerText = likes(document.getElementById('numero').value)">Convertir</button>
+    <p id="resultado-likes"></p>
+  </div>
+  
+  <!-- Contraseña Válida -->
+  <div id="password">
+    <h2>Contraseña Válida</h2>
+    <input type="text" id="username" placeholder="Nombre de usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="validarPassword()">Ingresar</button>
+  </div>
+  
+  <!-- Cálculo de Impuestos -->
+  <div id="impuestos">
+    <h2>Cálculo de Impuestos</h2>
+    <input type="text" id="edad" placeholder="Edad">
+    <input type="text" id="ingresos" placeholder="Ingresos">
+    <button onclick="document.getElementById('resultado-impuestos').innerText = calcularImpuestos(document.getElementById('edad').value, document.getElementById('ingresos').value)">Calcular</button>
+    <p id="resultado-impuestos"></p>
+  </div>
+  
+  <!-- Imprimir un Arreglo -->
+  <div id="arreglo">
+    <h2>Imprimir un Arreglo</h2>
+    <button onclick="document.getElementById('resultado-arreglo').innerHTML = imprimirArreglo(1, 'Hola', 2, 'Mundo')">Imprimir</button>
+    <div id="resultado-arreglo"></div>
+  </div>
+  
+  <!-- Número de Caracteres -->
+  <div id="caracteres">
+    <h2>Número de Caracteres</h2>
+    <input type="text" id="texto" placeholder="Texto">
+    <input type="text" id="caracter" placeholder="Caracter">
+    <button onclick="document.getElementById('resultado-caracteres').innerText = numeroDeCaracteres(document.getElementById('texto').value, document.getElementById('caracter').value)">Contar</button>
+    <p id="resultado-caracteres"></p>
+  </div>
+  
+  <!-- Sumar Arreglo -->
+  <div id="sumar">
+    <h2>Sumar Arreglo</h2>
+    <button onclick="document.getElementById('resultado-sumar').innerText = sumarArreglo([3, 1, 2])">Sumar</button>
+    <p id="resultado-sumar"></p>
+  </div>
+  
+  <!-- Multiplicar Arreglo -->
+  <div id="multiplicar">
+    <h2>Multiplicar Arreglo</h2>
+    <button onclick="document.getElementById('resultado-multiplicar').innerText = multiplicarArreglo([3, 1, 2])">Multiplicar</button>
+    <p id="resultado-multiplicar"></p>
+  </div>
+  
+  <!-- Sumar Arreglo Entre Rango -->
+  <div id="rango">
+    <h2>Sumar Arreglo Entre Rango</h2>
+    <button onclick="document.getElementById('resultado-rango').innerText = sumarArregloRango([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3, 6)">Sumar</button>
+    <p id="resultado-rango"></p>
+  </div>
+  
+  <!-- Encontrar el Número Máximo -->
+  <div id="max">
+    <h2>Encontrar el Número Máximo</h2>
+    <button onclick="document.getElementById('resultado-max').innerText = max([3, 9, 6])">Máximo</button>
+    <p id="resultado-max"></p>
+  </div>
+  
+  
+</body>
+</html>
